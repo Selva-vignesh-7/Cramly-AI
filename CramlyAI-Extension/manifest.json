@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Cramly AI",
+    "version": "1.0.0",
+    "description": "AI powered Chrome extension enable to crame notes from any webpage, pdf or doc. friendly AI assistant to help you with your last minute exam preparations.",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "sidePanel",
+        "scripting"
+    ],
+    "icons": {
+        "16": "ic.png",
+        "48": "ic.png",
+        "128": "ic.png"
+    },
+    "action":{
+        "default_icon": "iconc.png",
+        "default_title": "Research Assistant"
+    },
+    "side_panel": {
+        "default_path": "sidepanel.html",
+        "open_at_install": true
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "http://localhost:8080/*",
+        "<all_urls>"
+    ], 
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';"
+    }
+
+}

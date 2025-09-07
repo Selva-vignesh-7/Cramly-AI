@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+   
+    <title>Cramly</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Cramly AI</h2>
+            
+        </div>
+        <div class="intro">
+            <p class="intro-text">
+            Hey <span style="font-size: 18px; font-weight: bold;">Crammer !</span> </br> 
+            I'm <span style="font-size: 18px; font-weight: bold;">Cramly</span>, your buddy who explains the entire semester in hours.
+            </p>
+        </div>
+
+
+        <div class="notes">
+            <h3>Notes</h3>
+            <textarea id="notes" placeholder="Take notes here..."></textarea>
+            <button id="saveNotesBtn">Save</button>
+        </div>
+
+        <div class="actions">
+            <button id="summarizeBtn">Cramify</h2>
+        </div>
+        <div>
+            <p class="hint">
+            Tip : "For best results select only the most relevant paragraphs instead of large sections"
+            </p>
+        </div>
+
+        <div id="loader" class="loader" style="display: none;"></div>
+
+
+        <div id="result"></div>
+    </div>
+    <script src="sidepanel.js"></script>
+</body>
+</html>
